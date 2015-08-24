@@ -14,6 +14,10 @@
 		6047B8861B8ACC37005DD021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6047B8851B8ACC37005DD021 /* Images.xcassets */; };
 		6047B8891B8ACC37005DD021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6047B8871B8ACC37005DD021 /* LaunchScreen.xib */; };
 		6047B8951B8ACC37005DD021 /* PWPageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047B8941B8ACC37005DD021 /* PWPageViewControllerTests.m */; };
+		6047B8A41B8ACCE2005DD021 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047B8A31B8ACCE2005DD021 /* PageViewController.m */; };
+		6047B8A71B8ACCF3005DD021 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047B8A61B8ACCF3005DD021 /* SegmentView.m */; };
+		6047B8AA1B8AD38D005DD021 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047B8A91B8AD38D005DD021 /* PageView.m */; };
+		6047B8B31B8AEF42005DD021 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047B8B21B8AEF42005DD021 /* OneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		6047B88E1B8ACC37005DD021 /* PWPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6047B8931B8ACC37005DD021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6047B8941B8ACC37005DD021 /* PWPageViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPageViewControllerTests.m; sourceTree = "<group>"; };
+		6047B8A21B8ACCE2005DD021 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		6047B8A31B8ACCE2005DD021 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		6047B8A51B8ACCF3005DD021 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
+		6047B8A61B8ACCF3005DD021 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
+		6047B8A81B8AD38D005DD021 /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
+		6047B8A91B8AD38D005DD021 /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
+		6047B8B11B8AEF42005DD021 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		6047B8B21B8AEF42005DD021 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		6047B8771B8ACC37005DD021 /* PWPageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6047B8A11B8ACCAD005DD021 /* SegmentPageViewController */,
 				6047B87C1B8ACC37005DD021 /* AppDelegate.h */,
 				6047B87D1B8ACC37005DD021 /* AppDelegate.m */,
 				6047B87F1B8ACC37005DD021 /* ViewController.h */,
@@ -89,6 +102,8 @@
 				6047B8851B8ACC37005DD021 /* Images.xcassets */,
 				6047B8871B8ACC37005DD021 /* LaunchScreen.xib */,
 				6047B8781B8ACC37005DD021 /* Supporting Files */,
+				6047B8B11B8AEF42005DD021 /* OneViewController.h */,
+				6047B8B21B8AEF42005DD021 /* OneViewController.m */,
 			);
 			path = PWPageViewController;
 			sourceTree = "<group>";
@@ -117,6 +132,19 @@
 				6047B8931B8ACC37005DD021 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6047B8A11B8ACCAD005DD021 /* SegmentPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6047B8A21B8ACCE2005DD021 /* PageViewController.h */,
+				6047B8A31B8ACCE2005DD021 /* PageViewController.m */,
+				6047B8A51B8ACCF3005DD021 /* SegmentView.h */,
+				6047B8A61B8ACCF3005DD021 /* SegmentView.m */,
+				6047B8A81B8AD38D005DD021 /* PageView.h */,
+				6047B8A91B8AD38D005DD021 /* PageView.m */,
+			);
+			path = SegmentPageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6047B8A71B8ACCF3005DD021 /* SegmentView.m in Sources */,
+				6047B8AA1B8AD38D005DD021 /* PageView.m in Sources */,
 				6047B8811B8ACC37005DD021 /* ViewController.m in Sources */,
 				6047B87E1B8ACC37005DD021 /* AppDelegate.m in Sources */,
 				6047B87B1B8ACC37005DD021 /* main.m in Sources */,
+				6047B8B31B8AEF42005DD021 /* OneViewController.m in Sources */,
+				6047B8A41B8ACCE2005DD021 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PWPageViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PWPageViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
